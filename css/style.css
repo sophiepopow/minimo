@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+ul, ol{
+  list-style: none;
+  padding: 0;
+}
+/* =========== HEADER =========== */
+.header {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu {
+  padding: 0;
+  list-style: none;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  font-size: 14px;
+}
+
+.menu-link {
+  color: #818181;
+  text-decoration: none;
+}
+.menu-button{
+  border: 0px solid black;
+  background: none;
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+
+}
+.menu-button-item{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background: black;
+}
+.menu-button-item:nth-child(2){
+  top:8px;
+}
+.image {
+  width: 100%;
+}
+
+.heading {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  color: #434343;
+}
+
+.text {
+  font-family: 'Raleway';
+  color: #818181;
+  line-height: 1.8;
+}
+
+.header-content {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 50px;
+}
+
+/* =========== ARTICLES =========== */
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article {
+  width: 46%;
+}
+
+.category {
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+.article-heading {
+  font-family: 'Playfair Display';
+  color: #434343;
+}
+
+.article-link {
+  text-decoration: none;
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  color: #000000;
+  position: relative;
+
+}
+.article-link:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  background: black;
+  bottom: -1px;
+  right: 0px;
+  transition: 0.5s;
+}
+.article-link:hover::after{
+  width: 100%;
+}
+.newsletter{
+  background: #F0F0F0;
+  height: 350px;
+  padding: 40px;
+  text-align: center;
+  margin: 50px 0;
+}
+.form{
+
+  width: 500px;
+  margin: 50px auto;
+}
+.form-input{
+  background: none;
+  border: none;
+  width: 200px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.newsletter-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 38px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  margin-top: 60px;
+
+
+}
+.button{
+  background: none;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.form-group{
+  border-bottom: 2px solid grey;
+  display: flex;
+  justify-content: space-between;
+
+}
+.load-more{
+  font-family: 'Playfair Display';
+  text-decoration: none;
+  color: black;
+  border: 2.2px solid black;
+  width: 130px;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 50px auto;
+}
+.load-more:hover{
+  background: black;
+  color: white;
+}
+.footer{
+  border: 0px solid black;
+  background: #F0F0F0;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer-menu1{
+display: flex;
+justify-content: space-between;
+width: 250px;
+padding: 0;
+margin:auto;
+}
+.footer-menu2{
+display: flex;
+width: 200px;
+justify-content: space-between;
+padding: 0;
+margin: auto;
+}
+.footer-link{
+  text-decoration: none;
+  color: black;
+  font-family: 'Playfair Display';
+}
+.footer-icon{
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 650px){
+  .menu{
+    border: 3px solid red;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    background: white;
+    top: 0%;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 0.5s;
+
+  }
+  .menu-item{
+    margin-bottom: 30px;
+  }
+
+  .menu-open{
+    transform: translateY(0);
+  }
+  .header{
+    padding: 0 10px;
+  }
+  .header-content{
+    margin: 20px 0 0 0;
+  }
+  .heading{
+    font-size: 24px;
+  }
+  .articles {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .article{
+    width: 100%;
+  }
+  .newsletter-heading{
+    font-size: 24px;
+  }
+  .form{
+    width: auto;
+  }
+  .footer{
+    flex-direction: column;
+
+  }
+  .footer-menu2{
+    margin-top: 40px;
+    align-items: center;
+  }
+  .menu-button{
+    display: block;
+  }
+}
