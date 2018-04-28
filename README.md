@@ -22,3 +22,11 @@
     width 100%;
 }
 ```
+---
+*italics*
+
+**strong**
+
+~~line through~
+
+---
