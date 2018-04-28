@@ -10,6 +10,7 @@
 ![](https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?cs=srgb&dl=blur-business-close-up-1029757.jpg&fm=jpg)
 
 - [ ] CONTACT ME
+- [x] CHECK MY GITHUB
 - [ ] CHECK MY OTHER WORK
 
 ```html
