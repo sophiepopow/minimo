@@ -228,7 +228,7 @@ margin: auto;
 
 @media (max-width: 650px){
   .menu{
-    border: 3px solid red;
+    border: 0px solid red;
     flex-direction: column;
     width: 100%;
     position: absolute;
